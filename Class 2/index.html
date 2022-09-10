@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1> Food Items</h1>
+
+<div class="food-list"></div>
+
+
+
+<script>
+
+const foodList = document.querySelector('.food-list');
+
+const food = [
+    {item: 'Apples', price: 1.50},
+    {item: 'Bananas', price: 2.75},
+    {item: 'Donuts', price: 4.50}
+];
+
+for (let i = 0; i < food.length; i++) {
+
+    const foods = food[i];
+    const foodData = document.createElement('div');
+    foodData.innerText = food.item;
+    foodList.appendChild(foodData);
+}
+
+</script>
+    
+</body>
+</html>
